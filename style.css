@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #C9B9B9 ;
+}
+.main_box{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin: 50px auto;
+    padding: 30px;
+}
+.login_box{
+    flex-basis: 60%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px 0 0 10px;
+    box-shadow: -2px 2px 5px 2px gray;
+}
+.login_box h1{
+    margin-top: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.icons{
+    margin: 30px 5px 10px 5px;
+    border: 1px solid black;
+    border-radius: 50%; 
+    padding: 8px;
+}
+.fa-facebook-f{
+    padding: 7px 12px;
+}
+.login_box p{
+    color: gray;
+    margin-top: 10px;
+}
+.inputbox{
+    width: 70%;
+    height: 35px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: transparent;
+    background-color:#DDDADA;
+    border-radius: 10px;
+}
+.main_box button{
+    margin: 10px;
+    padding: 8px 25px;
+    background-color: #ED2A14;
+    border: none;
+    border-radius: 50px 50px 50px 50px;
+}
+.main_box button a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.login_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(221, 39, 176, 0.9), rgba(247, 6, 46, 0.932));
+    border-radius: 0 10px 10px 0;
+    box-shadow: 2px 2px 5px 2px gray;
+}
+.login_info h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    color: white;
+}
+.login_info p{
+    margin-top: 10px;
+   padding: 20px;
+    text-align: center;
+    font-size: 19px;
+    color: white;
+}
+@media (max-width: 970px){
+    .main_box{
+        flex-direction: column;
+    }
+    .login_box{
+        border-radius: 10px 10px 0 0;
+        box-shadow: 2px 0 5px 3px gray;
+    }
+    .inputbox{
+        width:60%;
+    }
+    .login_info h1{
+        margin-top: 30px;
+    }
+    .login_info{
+        border-radius: 0 0 10px 10px;
+        box-shadow: 2px 0 5px 3px gray;
+    }
+}
